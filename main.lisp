@@ -40,7 +40,7 @@
         (run-cmd "mkdir -p ~/.rmbin")
         t)
     (error (c)
-      (format t "~a" (concatenate 'string "E: failed to create ~/.rmbin/: " c "~%"))
+      (format t "E: failed to create ~/.rmbin/")
       nil)))
 
 (defun eval-call ()
